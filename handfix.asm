@@ -15,7 +15,7 @@ org 100h
 section .text
 
 start:
-	; Extension index register
+    ; Extension index register
     mov dx,3d6h
     ; XR51 display type register
     mov al,51h
@@ -32,17 +32,46 @@ start:
     mov ah,0
     mov al,3
     int 10h
+
+    mov al,6eh
+    mov bl,byte [82h]
+    cmp al,bl
+    je noblue
+
+    ; Clear the screen with a blue background to help auto-adjust
+    mov ah, 06h
+    mov al, 00h
+    mov bh, 17h
+    mov cx, 0000h
+    mov dx, 184fh
+    int 10h
+
+    ; Output a string
+    mov ah,09h
+    mov dx,message
+    int 21h
     
+    ; Output a string
+    mov ah,09h
+    mov dx,bluemsg
+    int 21h
+
+    ; Exit program
+    int 20h
+
+noblue:
     ; Output a string
     mov ah,09h
     mov dx,message
     int 21h
     
     ; Exit program
-    mov ah,0
     int 20h
     
 section .data
 
 message:
-	db 'Hand386 70Hz vsync fix (c) 2023 Ian Scott',13,10,'60Hz forced video now disabled!',13,10,'$'
+    db 'Hand386 70Hz vsync fix (c) 2023 Ian Scott',13,10,'60Hz forced video now disabled!',13,10,'$'
+
+bluemsg:
+    db 'Setting blue background to help autoadjust.',13,10,'Run "handfix n" to leave default background.',13,10,'$'

@@ -26,10 +26,10 @@ Screenshot:
 
 ## Caveats! ##
 
-The auto-adjust that the screen undergoes is not perfect. On my Hand386, the
+The auto-adjust that the screen undergoes may not be perfect. On my Hand386, the
 bottom is cut off by a few rows of pixels. Currently there is no way to
-re-trigger an auto-adjust on the Hand386. Future versions of this utility will
-fill the screen with color in an attempt to get better auto-adjustment.
+re-trigger an auto-adjust on the Hand386. This utility fills the screen with a
+blue background in an attempt to get better auto-adjustment.
 
 ## Before and after ##
 
