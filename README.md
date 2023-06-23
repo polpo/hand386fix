@@ -22,6 +22,10 @@ refresh modes). Screenshot:
 
 ## Before and after ##
 
+See (actually hear) the difference in this video:
+
+[<img src="https://img.youtube.com/vi/o0BhFbuwMuM/maxresdefault.jpg" alt="YouTube thumbnail" width=600>](https://youtu.be/o0BhFbuwMuM)
+
 ## Credits ##
 
 References: Chips & Technology 65535 datasheet, available at:
