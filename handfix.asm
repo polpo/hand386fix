@@ -33,11 +33,19 @@ start:
     mov al,3
     int 10h
 
+    ; Test if no arguments given
+    mov al,0 
+    mov bl,byte [80h]
+    cmp al,bl
+    je yesblue
+
+    ; Test if second argument is 'n' (first is space)
     mov al,6eh
     mov bl,byte [82h]
     cmp al,bl
     je noblue
 
+yesblue:
     ; Clear the screen with a blue background to help auto-adjust
     mov ah, 06h
     mov al, 00h
