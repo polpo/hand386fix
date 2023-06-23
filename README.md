@@ -1,2 +1,30 @@
-# hand386fix
-70Hz VGA mode fixer for Hand386 handheld DOS PC
+# 70Hz vsync fix for Hand386 #
+
+The Hand386 handheld PC released in 2023 is a really cool gadget and has taken
+the retro PC world by storm. The Hand386 comes with a Chips & Technologies 65535
+VGA controller, and unfortunately the video BIOS that comes with the Hand386
+sets it to flat panel output mode, forcing all video to 60Hz vertical refresh.
+The device uses a Realtek flat panel controller that takes a VGA signal, and it
+has no problem syncing to the 70Hz VGA mode.
+
+
+Programs that expect the standard VGA modes to be at 70Hz may run too slowly or
+have other strange behavior when forced to 60Hz. For example, music in the demo
+Second Reality by Future Crew has a tempo that is slower than normal.
+
+## Running it ##
+
+Download handfix.com from the Releases section of this repository and copy to
+your Hand386. Run handfix.exe to re-enable 70Hz VGA modes (and other tweaked
+refresh modes). Screenshot:
+
+<img width="719" alt="handfix" src="https://github.com/polpo/hand386fix/assets/1544908/4c7c32ff-7e50-47c4-a378-6062a3103e11">
+
+## Before and after ##
+
+## Credits ##
+
+References: Chips & Technology 65535 datasheet, available at:
+https://www.yyzkevin.com/pc110/65535-2/
+
+Thanks to yyzkevin for his knowledge about the C&T 65535!
