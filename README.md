@@ -16,7 +16,9 @@ Second Reality by Future Crew has a tempo that is slower than normal.
 
 Download handfix.com from the Releases section of this repository and copy to
 your Hand386. Run handfix.exe to re-enable 70Hz VGA modes (and other tweaked
-refresh modes). Screenshot:
+refresh modes). The first time you run it, it will take some time to auto-adjust the screen.
+
+Screenshot:
 
 <img width="719" alt="handfix" src="https://github.com/polpo/hand386fix/assets/1544908/4c7c32ff-7e50-47c4-a378-6062a3103e11">
 
