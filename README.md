@@ -24,6 +24,13 @@ Screenshot:
 
 <img width="719" alt="handfix" src="https://github.com/polpo/hand386fix/assets/1544908/4c7c32ff-7e50-47c4-a378-6062a3103e11">
 
+## Caveats! ##
+
+The auto-adjust that the screen undergoes is not perfect. On my Hand386, the
+bottom is cut off by a few rows of pixels. Currently there is no way to
+re-trigger an auto-adjust on the Hand386. Future versions of this utility will
+fill the screen with color in an attempt to get better auto-adjustment.
+
 ## Before and after ##
 
 See (actually hear) the difference in this video:
